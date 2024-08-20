@@ -11,10 +11,10 @@ public class Main {
 
         long amount = service.amountOfSales(sales);
         long averageAmount = service.averageAmountPerMonth(sales);
-        long maxMonth = service.getMaxMonth(sales);
-        long minMonth = service.getMinMonth(sales);
-        long belowAverage = service.salesAreBelowAverage(sales);
-        long aboveAverage = service.salesAreAboveAverage(sales);
+        int maxMonth = service.getMaxMonth(sales);
+        int minMonth = service.getMinMonth(sales);
+        int belowAverage = service.salesAreBelowAverage(sales);
+        int aboveAverage = service.salesAreAboveAverage(sales);
 
         System.out.println("Сумма всех продаж составила - " + amount);
         System.out.println("Средняя суммуа продаж в месяц - " + averageAmount);
